@@ -1,0 +1,8 @@
+body {
+  font-family: -apple-system, Helvetica Neue, sans-serif;
+}
+
+.carousel-inner > .item > img {
+  width:100px;
+  height:50px;
+}
