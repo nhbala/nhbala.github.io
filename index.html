@@ -9,32 +9,63 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
   </head>
   <body>
-    <div class="container">
+    <nav>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="#introduction">About Me</a>
+      <a class="nav-item nav-link" href="#projects">Projects</a>
+      <a class="nav-item nav-link" href="#workstuff">Work Experience</a>
+      <a class="nav-item nav-link" href="https://drive.google.com/file/d/1g-13R0jnaQPVDBKb8j9vq8KW8K_N0FqI/view?usp=sharing" target="_blank">Resume</a>
+    </div>
+  </div>
+
+    </nav>
+    <div data-aos="fade-in" class="container">
       <img src="title.png" class="thumbnail img-responsive" alt="titlething">
-      <div id="introduction" class="body">
-        <h2>About Me</h2>
-        <p>
-          Hey there! My name is Nathan Bala and I am currently a student a Cornell University
-          majoring in Computer Science with an intended minor in Asian American Studies. Feel free
-          to look through this website to see some of the projects I have worked on in the past, my work
-          experiences, and other information about me.
-        </p>
-        <p>
+      <div data-aos="fade-in" class="body" style="padding-top: 200px;">
+        <h2 id="introduction">About Me</h2>
+        <div data-aos="fade-in" class="row" style="padding-top: 25px;">
+          <div class="col">
+            <p>
+              Hey there!
+            </p>
+            <p>
+              My name is Nathan Bala and I am currently a student a Cornell University
+              majoring in Computer Science with an intended minor in Asian American Studies.
+              I'm passionate about developing technologies that impact scoiety in a positive way.
+            </p>
+            <p>
+              Outside of Computer Science, I'm have been a member of the Cornell Symphony Orchestra and currently serve
+              as the President for the Cornell Chapter of Lambda Phi Epsilon
+            </p>
+            <p>
+              <h3><a style="font-size:40px;"href="https://github.com/nhbala" target="_blank" ><i class="fab fa-github"></i></a> <a style="font-size:40px;"href="https://www.linkedin.com/in/nathan-bala-19b2b612b/" target="_blank" ><i class="fab fa-linkedin"></i></a>
+              </h3>
+            <p>
+          </div>
+          <div class="col">
+            <img src="forwebsite.jpg" alt="titlething">
+          </div>
+        </div>
+
+        <!-- <p>
           If you want to reach me for any reason, please send
           an email to <strong>nb378@cornell.edu</strong>!
-        </p>
+        </p> -->
       </div>
-      <div style="padding-top: 25px;">
-        <h2>Projects</h2>
+      <div style="padding-top: 475px;" >
+        <h2 id="projects">Things I've Built</h2>
       </div>
-      <div class="container">
-        <div class="row" style="padding-top: 25px;">
+      <div data-aos="fade-in" class="container" data-aos-duration="4000">
+        <div data-aos="fade-in" class="row" style="padding-top: 25px;">
           <div class="col">
-            <h3> Quick Maths  <a href="https://github.com/nhbala/AI-Matheq" target="_blank" ><i class="fab fa-github"></i></a>  </h3>
+            <h3> Quick Maths  <a href="https://github.com/nhbala/Quick_Maths" target="_blank" ><i class="fab fa-github"></i></a>  </h3>
             <img src="quickmaths.png"  class="img-fluid" alt="titlething">
           </div>
           <div class="col">
@@ -43,16 +74,16 @@
             as simple arithmetic operations such as adding and multiplying as well as more complex ones such as exponents
             and trigonometric functions.</p>
             <p>
-              Developed a <strong> convolutional neural network </strong> that recognizes a wide array of different handwriting patterns for specific mathematical symbols and utilized
-              <strong> OpenCV and other computer vision techniques </strong> to correctly recognize and separate individual components of handwritten math expressions.
+              Developed a convolutional neural network that recognizes a wide array of different handwriting patterns for specific mathematical symbols and utilized
+              OpenCV and other computer vision techniques to correctly recognize and separate individual components of handwritten math expressions.
 
             </p>
           </div>
         </div>
-        <div class="row">
+        <div data-aos="fade-in" class="row"  style="padding-top: 25px;">
           <div class="col">
-            <div id="projects" class="body">
-                    <h3> Mariwanna! <a href="https://github.com/jeffliu6/mariwanna" target="_blank" ><i class="fab fa-github"></i></a>  <a class="btn btn-primary" href="https://mariwanna.herokuapp.com/" target="_blank" role="button">Try me!</a><h3>
+            <div class="body">
+                    <h3> Mariwanna! <a href="https://github.com/jeffliu6/mariwanna" target="_blank" ><i class="fab fa-github"></i></a> <a href="https://mariwanna.herokuapp.com/" target="_blank"><i class="fas fa-external-link-alt"></i></a><h3>
                   <div class="col-sm">
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -86,16 +117,16 @@
               to find strains based off their what possible medical issues they are looking to remedy, possible
               undesired and desired effects, and flavors and aromas.</p>
             <p>
-              Implemented <strong> Cosine similarity </strong>
-              in order to rank revelent results based off user inputs and utilized <strong>Latent Dirichlet allocation
-              and other natural language processing techniques </strong> for topic modeling to more accurately categorize and sort data.
+              Implemented Cosine similarity
+              in order to rank revelent results based off user inputs and utilized Latent Dirichlet allocation
+              and other natural language processing techniques for topic modeling to more accurately categorize and sort data.
             </p>
           </div>
         </div>
-        <div class="row" style="padding-top: 40px;">
+        <div data-aos="fade-in" class="row" style="padding-top: 40px;">
           <div class="col">
-            <div id="projects" class="body">
-                    <h3> "Remain Silent" <a href="https://github.com/nhbala/USA-PoliceKilling-Viz"  target="_blank"><i class="fab fa-github"></i></a>  <a class="btn btn-primary" href="https://nhbala.github.io/USA-PoliceKilling-Viz/" target="_blank" role="button">Try me!</a><h3>
+            <div class="body">
+                    <h3> "Remain Silent" <a href="https://github.com/nhbala/USA-PoliceKilling-Viz"  target="_blank"><i class="fab fa-github"></i></a> <a href="https://nhbala.github.io/USA-PoliceKilling-Viz/" target="_blank"><i class="fas fa-external-link-alt"></i></a> <h3>
                   <div class="col-sm">
                     <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -105,13 +136,13 @@
                     </ol>
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img class="d-block w-100" src="police2.png" alt="First slide">
+                        <img class="d-block w-100" src="police3.png" alt="First slide">
                       </div>
                       <div class="carousel-item">
-                        <img class="d-block w-100" src="police1.png" alt="Second slide">
+                        <img class="d-block w-100" src="police2.png" alt="Second slide">
                       </div>
                       <div class="carousel-item">
-                        <img class="d-block w-100" src="police3.png" alt="Third slide">
+                        <img class="d-block w-100" src="police1.png" alt="Third slide">
                       </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -134,7 +165,7 @@
             presented to allow users to view the specific locations where these killings have taken place and filter these out by specific years. </p>
           </div>
         </div>
-        <div class="row" style="padding-top: 40px;">
+        <div data-aos="fade-in" class="row" style="padding-top: 40px;">
           <div class="col">
             <h3> BattleShips <a href="https://github.com/nhbala/OCaml-BattleShips" target="_blank" ><i class="fab fa-github"></i></a>  </h3>
             <img src="BattleShips.png"  class="img-fluid" alt="titlething">
@@ -150,14 +181,13 @@
           </div>
         </div>
       </div>
-      <div style="padding-top: 25px;">
-        <h2>Work Experiences</h2>
+      <div style="padding-top: 400px;">
+        <h2 id="workstuff">Places I've Worked At</h2>
       </div>
     <div class="container">
-      <div class="row" style="padding-top: 25px;">
+      <div data-aos="fade-in" class="row" style="padding-top: 25px;">
         <div class="col">
           <h3>Capital One</h3>
-          <img src="capitalone.png"  class="img-fluid" style="padding-top: 30px;" alt="titlething">
         </div>
         <div class="col">
           <p> <strong>Incoming Software Engineering Intern</strong> | Jun 2019 - August 2019<p>
@@ -166,13 +196,12 @@
           </p>
         </div>
       </div>
-      <div class="row" style="padding-top: 25px;">
+      <div data-aos="fade-in" class="row" style="padding-top: 25px;">
         <div class="col">
           <h3>AguaClara</h3>
-          <img src="aguaclara.png"  class="img-fluid" style="padding-top: 30px;" alt="titlething">
         </div>
         <div class="col">
-          <p> <strong>Software Developer (Team Lead)</strong> | Sep 2017 - Present<p>
+          <p> <strong>Software Developer (Subteam Lead)</strong> | Sep 2017 - Present<p>
           <p>
              Developed a script that analyzes a continuous stream of thousands of data points
              concerning water quality and utilizes this analysis to send automated bimonthly emails
@@ -188,10 +217,9 @@
           </p>
         </div>
       </div>
-      <div class="row" style="padding-top: 25px;">
+      <div data-aos="fade-in" class="row" style="padding-top: 25px;">
         <div class="col">
           <h3> StartupTree </h3>
-          <img src="startuptree_logo.png"  class="img-fluid" style="padding-top: 30px;" alt="titlething">
         </div>
         <div class="col">
           <p> <strong>Software Engineering Intern</strong> | Jan 2018 - Aug 2018<p>
@@ -210,12 +238,25 @@
       </div>
     </div>
 
+    <!-- <div style="padding-top: 400px;">
+      <h2 id="workstuff">Say Hello</h2>
+    </div>
+  <div class="container">
+    <div data-aos="fade-in" class="row" style="padding-top: 25px;">
+
+    </div>
+  </div> -->
+
 
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
