@@ -7,24 +7,26 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="stylesheet.css">
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
 
 
   </head>
-  <body>
-    <nav>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <body >
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
       <a class="nav-item nav-link" href="#introduction">About Me</a>
       <a class="nav-item nav-link" href="#projects">Projects</a>
       <a class="nav-item nav-link" href="#workstuff">Work Experience</a>
+      <!-- <a class="nav-item nav-link" href="#contact">Contact Me</a> -->
       <a class="nav-item nav-link" href="https://drive.google.com/file/d/1g-13R0jnaQPVDBKb8j9vq8KW8K_N0FqI/view?usp=sharing" target="_blank">Resume</a>
     </div>
   </div>
-
     </nav>
     <div data-aos="fade-in" class="container">
       <img src="title.png" class="thumbnail img-responsive" alt="titlething">
@@ -33,16 +35,20 @@
         <div data-aos="fade-in" class="row" style="padding-top: 25px;">
           <div class="col">
             <p>
-              Hey there!
+              Hey!
             </p>
             <p>
               My name is Nathan Bala and I am currently a student a Cornell University
               majoring in Computer Science with an intended minor in Asian American Studies.
-              I'm passionate about developing technologies that impact scoiety in a positive way.
+              I'm passionate about developing technologies that impact society in a positive way! This website
+              was built by me as a way to display some of my personal projects and work experience.
             </p>
             <p>
               Outside of Computer Science, I'm have been a member of the Cornell Symphony Orchestra and currently serve
               as the President for the Cornell Chapter of Lambda Phi Epsilon
+            </p>
+            <p> If you wish to collaborate on a project or simply wish to reach out to me, shoot me an email at
+              <strong> nb378@cornell.edu </strong>!
             </p>
             <p>
               <h3><a style="font-size:40px;"href="https://github.com/nhbala" target="_blank" ><i class="fab fa-github"></i></a> <a style="font-size:40px;"href="https://www.linkedin.com/in/nathan-bala-19b2b612b/" target="_blank" ><i class="fab fa-linkedin"></i></a>
@@ -53,16 +59,12 @@
             <img src="forwebsite.jpg" alt="titlething">
           </div>
         </div>
-
-        <!-- <p>
-          If you want to reach me for any reason, please send
-          an email to <strong>nb378@cornell.edu</strong>!
-        </p> -->
       </div>
+    </div>
       <div style="padding-top: 475px;" >
-        <h2 id="projects">Things I've Built</h2>
       </div>
       <div data-aos="fade-in" class="container" data-aos-duration="4000">
+        <h2 id="projects">Things I've Built</h2>
         <div data-aos="fade-in" class="row" style="padding-top: 25px;">
           <div class="col">
             <h3> Quick Maths  <a href="https://github.com/nhbala/Quick_Maths" target="_blank" ><i class="fab fa-github"></i></a>  </h3>
@@ -182,12 +184,14 @@
         </div>
       </div>
       <div style="padding-top: 400px;">
-        <h2 id="workstuff">Places I've Worked At</h2>
       </div>
     <div class="container">
-      <div data-aos="fade-in" class="row" style="padding-top: 25px;">
+        <div data-aos="fade-in" class="body" style="padding-top: 200px;">
+          <h2 id="workstuff">Places I've Worked At</h2>
+          <div data-aos="fade-in" class="row" style="padding-top: 25px;">
         <div class="col">
           <h3>Capital One</h3>
+            <img src="capitalone.png"  class="img-fluid" alt="titlething">
         </div>
         <div class="col">
           <p> <strong>Incoming Software Engineering Intern</strong> | Jun 2019 - August 2019<p>
@@ -199,6 +203,7 @@
       <div data-aos="fade-in" class="row" style="padding-top: 25px;">
         <div class="col">
           <h3>AguaClara</h3>
+          <img src="aguaclaralogo.png"  class="img-fluid" alt="titlething">
         </div>
         <div class="col">
           <p> <strong>Software Developer (Subteam Lead)</strong> | Sep 2017 - Present<p>
@@ -220,6 +225,7 @@
       <div data-aos="fade-in" class="row" style="padding-top: 25px;">
         <div class="col">
           <h3> StartupTree </h3>
+          <img src="startuptree_logo.png"  class="img-fluid" alt="titlething">
         </div>
         <div class="col">
           <p> <strong>Software Engineering Intern</strong> | Jan 2018 - Aug 2018<p>
@@ -237,6 +243,15 @@
         </div>
       </div>
     </div>
+
+
+    <!-- <div data-aos="fade-in" class="body" style="padding-top: 200px;">
+      <h2 id="contact">Contact Me</h2>
+
+
+    </div> -->
+
+
 
     <!-- <div style="padding-top: 400px;">
       <h2 id="workstuff">Say Hello</h2>
@@ -258,5 +273,6 @@
     <script>
       AOS.init();
     </script>
+
   </body>
 </html>
