@@ -126,10 +126,6 @@ html {
     font-weight: 300;
   }
 
-  li, a:hover{
-    color: #252CF3;
-    opacity: .6;
-  }
 
   #menu li {
     margin: 10px;
